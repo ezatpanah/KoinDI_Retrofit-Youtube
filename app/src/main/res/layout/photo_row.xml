@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imgArt"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvUserTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="User:"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/tvCommentTitle"
+                app:layout_constraintStart_toEndOf="@id/imgArt"
+                app:layout_constraintTop_toTopOf="@id/imgArt" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="User Name"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/tvUserTitle"
+                app:layout_constraintStart_toEndOf="@id/tvUserTitle"
+                app:layout_constraintTop_toTopOf="@id/tvUserTitle" />
+
+            <TextView
+                android:id="@+id/tvCommentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Comment:"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/tvLikeTitle"
+                app:layout_constraintStart_toEndOf="@id/imgArt"
+                app:layout_constraintTop_toBottomOf="@id/tvUserTitle" />
+
+            <TextView
+                android:id="@+id/tvCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Comment Count"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCommentTitle"
+                app:layout_constraintStart_toEndOf="@id/tvCommentTitle"
+                app:layout_constraintTop_toTopOf="@id/tvCommentTitle" />
+
+            <TextView
+                android:id="@+id/tvLikeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Like :"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgArt"
+                app:layout_constraintStart_toEndOf="@id/imgArt"
+                app:layout_constraintTop_toBottomOf="@id/tvCommentTitle" />
+
+            <TextView
+                android:id="@+id/tvLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Like Count"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvLikeTitle"
+                app:layout_constraintStart_toEndOf="@id/tvLikeTitle"
+                app:layout_constraintTop_toTopOf="@id/tvLikeTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

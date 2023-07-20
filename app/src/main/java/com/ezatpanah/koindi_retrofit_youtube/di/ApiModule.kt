@@ -1,6 +1,7 @@
 package com.ezatpanah.koindi_retrofit_youtube.di
 
 
+import com.ezatpanah.koindi_retrofit_youtube.BuildConfig
 import com.ezatpanah.koindi_retrofit_youtube.api.ApiServices
 import com.ezatpanah.koindi_retrofit_youtube.utils.Constants.BASE_URL
 import com.ezatpanah.koindi_retrofit_youtube.utils.Constants.NETWORK_TIMEOUT
@@ -9,7 +10,6 @@ import com.google.gson.GsonBuilder
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import org.koin.android.BuildConfig
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

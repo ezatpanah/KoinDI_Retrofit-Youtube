@@ -6,6 +6,6 @@ import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val photoModule = module {
-    single { ApiRepository(get()) }
+    factory { ApiRepository(get()) }
     viewModel { MainViewModel(get()) }
 }

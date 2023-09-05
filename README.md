@@ -19,7 +19,7 @@ Article on Medium:
 <br>
 Part 1:
 <br>
-Coming Soon ...
+https://medium.com/@ezatpanah/part-1-how-to-use-koin-di-with-retrofit-in-kotlin-38288bdda1a5
 <br>
 Part 2 :
 <br>
